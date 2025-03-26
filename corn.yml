@@ -1,10 +1,10 @@
-Required_Light: 10
+Required_Light: 9
 # Set to -1 if no required light
-Require_Water_Radius: 9
+Require_Water_Radius: -1
 # Set to -1 if no required water
 Required_XP: -1
 # Set to -1 if no required xp
-Grow_Time: 10
+Grow_Time: 500
 # This is in seconds
 Leaf_Block_Material: "FERN"
 #This is the material type of the block which exists under the textured head for this crop
@@ -16,26 +16,26 @@ Leaf_Block_Material: "FERN"
 
 Seed:
   id: WHEAT_SEEDS
-  name: '&>LCH#ff0000Testing Message&<LCH#0000ff'
+  name: '&rRaspberry Seeds'
   lore:
-  - '&r&7Plant me in tilled dirt!'
+  - 
 
 Harvests:
   "1-1":
     percent: 0
     chance: 50
-    headtexture: 59970d085bf5aae875165f8337896242c12cd11299df89891a8a813adeb8
+    headtexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDg3YmRlN2NiNjYxOGJlMWMxYzkwM2Y2ODc1ZWE5NzZlNTczMzU0NDI0OGZkNTA1ZjUxNmExOGYyOTIzNSJ9fX0=
     xp: 1
     FirstItemToDrop:
       id: WHEAT_SEEDS
       amount: 1
-      name: '&>LCH#ff0000Testing Message&<LCH#0000ff'
+      name: '&rRaspberry Seeds'
       lore:
-      - '&r&7Plant me in tilled dirt!'
+      - 
   "1-2":
     percent: 0
     chance: 50
-    headtexture: 59970d085bf5aae875165f8337896242c12cd11299df89891a8a813adeb8
+    headtexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDg3YmRlN2NiNjYxOGJlMWMxYzkwM2Y2ODc1ZWE5NzZlNTczMzU0NDI0OGZkNTA1ZjUxNmExOGYyOTIzNSJ9fX0=
     FirstItemToDrop:
       id: STICK
 #Notice that harvest 1-1 and 1-2 are BOTH potential drop options for phase 1
@@ -44,28 +44,35 @@ Harvests:
   '2':
     percent: 10
     chance: 100
-    headtexture: cc9cc9b5497284ca75a0c0a6711316251fb7c63b7282908bffe6257ddc341
+    headtexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDg3YmRlN2NiNjYxOGJlMWMxYzkwM2Y2ODc1ZWE5NzZlNTczMzU0NDI0OGZkNTA1ZjUxNmExOGYyOTIzNSJ9fX0=
     FirstItemToDrop:
       id: WHEAT_SEEDS
       amount: 2
-      name: '&>LCH#ff0000Testing Message&<LCH#0000ff'
+      name: '&rRaspberry Seeds'
       lore:
-      - '&r&7Plant me in tilled dirt!'
+      - 
   '3':
     percent: 100
     chance: 100
-    headtexture: d391dffbea2fc3f2ad78a623f49bf7e1121694112c3759feed4156fc2ba46c0
+    headtexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEyZWYxYjQ4NmU5N2U0Y2IxMjRhYTc2MjlhY2ViOTFlZGM1MWQ2MzMzOGM5MWEwMTI4ODU0OTNjNWQ5YyJ9fX0=
     FirstItemToDrop:
       id: WHEAT_SEEDS
       amount: 2
-      name: '&>LCH#ff0000Testing Message&<LCH#0000ff'
+      name: '&rRaspberry Seeds'
       lore:
-      - '&r&7Plant me in tilled dirt!'
+      - 
     SecondItemToDrop:
-      id: DIAMOND_SWORD
+      id: Raspberry
       amount: 1
-      name: '&rCorn'
+      name: '&rRaspberry'
       lore:
-       - '&r&7Farm fresh!'
+       - '&r&7A sweet and tangy treat!'
       enchantments:
-       - "mending:1"
+       - "unbreaking:1"
+      tags:
+       - "unbreakable:true"
+      flags:
+       - "HIDE_ATTRIBUTES"
+       - "HIDE_UNBREAKABLE"
+       
+              
